@@ -14,10 +14,15 @@ export async function main(event, context, callback) {
     },
     // 'UpdateExpression' defines the attributes to be updated
     // 'ExpressionAttributeValues' defines the value in the update expression
-    UpdateExpression: "SET content = :content, attachment = :attachment",
+    UpdateExpression: "SET content = :content, attachment = :attachment, walkstart = :walkstart, walkend = :walkend, latitude = :latitude, longitude = :longitude, updated = :updated",
     ExpressionAttributeValues: {
       ":attachment": data.attachment ? data.attachment : null,
-      ":content": data.content ? data.content : null
+      ":content": data.content ? data.content : null,
+      ":walkstart": data.walkstart ? data.walkstart : null,
+      ":walkend": data.walkend ? data.walkend : null,
+      ":latitude": data.latitude ? data.latitude : null,
+      ":longitude": data.longitude ? data.longitude : null,
+      ":updated": Date.now()
     },
     ReturnValues: "ALL_NEW"
   };

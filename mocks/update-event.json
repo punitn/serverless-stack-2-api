@@ -1,5 +1,5 @@
 {
-  "body": "{\"content\":\"new world\",\"attachment\":\"new.jpg\"}",
+  "body": "{\"content\":\"new world\",\"attachment\":\"new.jpg\",\"walkstart\":\"01/01/2018 14:00\",\"walkend\":\"01/01/2018 15:00\",\"latitude\":\"100\",\"longitude\":\"200\" }",
   "pathParameters": {
     "id": "578eb840-f70f-11e6-9d1a-1359b3b22944"
   },
